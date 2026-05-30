@@ -132,21 +132,26 @@ h3 {
 
 
 .typing {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 0;
-    animation:
-        typing 6s steps(14) infinite,
-        blink 0.5s infinite;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 9ch; }
+
+
+.typing::after {
+    content: "Nabhan";
+    animation: words 6s infinite;
 }
 
-@keyframes blink {
-    50% { border-color: transparent; }
+@keyframes words {
+    0%, 33% {
+        content: "cyberworrier";
+        color: #2563eb;
+    }
+    34%, 66% {
+        content: "Imu";
+        color: #ef4444;
+    }
+    67%, 100% {
+        content: "Joker";
+        color: #10b981;
+    }
 }
