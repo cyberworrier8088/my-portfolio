@@ -1,0 +1,152 @@
+/* style.css :) */
+
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background-image: url('assets/bg1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.highlight {
+    color: #2563eb;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+
+}
+
+.highlight::after {
+    content: "Developer";
+    animation: words 6s infinite;
+}
+
+@keyframes words {
+    0%, 33% {
+        content: "Developer";
+        color: #2563eb;
+    }
+    34%, 66% {
+        content: "Hackers";
+        color: #ef4444;
+    }
+    67%, 100% {
+        content: "Student";
+        color: #10b981;
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.role {
+    color: #0ea5e9;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    color: #2563eb;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.contact-item:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card:hover {
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h3 {
+    color: #2563eb;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 4px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #000614;
+    border-left: 4px solid #ebebeb;
+    border-right: 4px solid #ff0404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation:
+        typing 6s steps(14) infinite,
+        blink 0.5s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 9ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
