@@ -1,4 +1,3 @@
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Software](https://img.shields.io/badge/Project-Software-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Active%20Development-informational)
 ![Series](https://img.shields.io/badge/Series-Special_Issue-red.svg)
@@ -55,6 +54,3 @@ This is a static website (no build step required).
 
 
 
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
