@@ -7,7 +7,11 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 30px;
-    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url('assets/svg.svg');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -20,7 +24,21 @@ body {
     background-image: url('assets/bg1.png');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+.container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: #005eff;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+
 
 .highlight {
     color: #2563eb;
@@ -48,6 +66,9 @@ body {
         color: #10b981;
     }
 }
+
+
+
 
 @keyframes pulse {
     0% { opacity: 1; }
@@ -99,15 +120,12 @@ h1 {
     border-radius: 10px;
     margin-bottom: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    animation: rotate 2s infinite;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
 }
 
 h3 {
@@ -128,20 +146,26 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile:hover {
+    transform: rotate(360deg) scale(1.1);
 }
 
 
-.typing {
+.highlighttyping {
+    color: #2563eb;
+    animation: pulse 2s infinite;
+    font-weight: bold;
 }
 
-
-
-.typing::after {
-    content: "Nabhan";
-    animation: words 6s infinite;
+.highlighttyping::after {
+    content: "";
+    animation: typing 6s infinite;
 }
 
-@keyframes words {
+@keyframes typing {
     0%, 33% {
         content: "cyberworrier";
         color: #2563eb;
@@ -154,4 +178,14 @@ h3 {
         content: "Joker";
         color: #10b981;
     }
+}
+
+.monkey-sitting {
+    position: absolute;
+    top: -68px;
+    left: 500px;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    pointer-events: none;
 }
