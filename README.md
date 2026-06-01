@@ -53,8 +53,13 @@ This is a static website (no build step required).
 2. Open `index.html` in your browser
 
 ## Screenshots
-![Screenshot](assets/image.png)
-![Video](assets\video.gif)
+![Screenshot](assets/demo1.png)
+![screenshot](assets/demo2.png)
+![screenshot](assets/demo3.png)
+
+
+## Screen recording
+![Screen recording](assets/demo4.gif)
 
 
 
