@@ -22,6 +22,7 @@ The site includes:
 - Made meme style
 - dedicated pages containner
 - Responsive design
+- hover effects
 
 
 
@@ -37,7 +38,10 @@ The site includes:
 | Path | Description |
 | --- | --- |
 | [`index.html`](./index.html) | Main projects page |
-| [`style.css`](./style.css) | Stylesheet |
+| [`about.html`](./about.html) | About page |
+| [`contact.html`](./contact.html) | Contact page |
+| [`assets/`](./assets/) | Assets folder |
+| [`style.css`](./style.css) | Stylesheet, this is the main file |
 | [`script.js`](./script.js) | JavaScript file :)))|
 
 
